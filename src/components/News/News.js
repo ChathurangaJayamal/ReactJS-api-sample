@@ -13,7 +13,7 @@ class News extends Component {
     }
 
     componentWillMount () {
-        const url = `https://newsapi.org/${this.props.endpoint}?country=us&category=business&apiKey=6b3232fb7b134ec4932ad8ea0d0c9493`
+        const url = `https://newsapi.org/${this.props.endpoint}?country=us&category=business&apiKey=xyz`
         fetch (url)
             .then (response => response.json())
             .then (json => {
@@ -36,9 +36,6 @@ class News extends Component {
         return (
             <div className="main">
                 {this.renderItems()}
-                <div className="footer">
-                    <p>Footer Area</p>
-                </div>
             </div>
         )
     }

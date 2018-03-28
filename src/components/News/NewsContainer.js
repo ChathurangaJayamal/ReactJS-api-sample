@@ -17,9 +17,12 @@ class NewsContainer extends Component {
         return (
         <div className="App">
             <header className="App-header">
-            <h1 className="App-title">News Feed</h1>
+                <h1 className="App-title">News Feed</h1>
             </header>
             <News endpoint={this.state.headlines.endpoint}/>
+            <footer className="App-footer">
+                <p>Footer</p>
+            </footer>
         </div>
         )
     }
